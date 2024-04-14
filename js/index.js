@@ -27,7 +27,7 @@ function clock() {
       nowMinutes = nowMinutes < 10 ? '0' + nowMinutes : nowMinutes // 如果当前秒数小于10，则在前面添加0
       nowSecond = nowSecond < 10 ? '0' + nowSecond : nowSecond // 如果当前秒数小于10，则在前面添加0
       // 将当前时间显示在.oneDay的div容器中
-      document.querySelector('.oneDay').innerHTML = `${nowHours}:${nowMinutes}:${nowSecond} &nbsp ${nowMonth + 1}/${nowDate}/${nowYear}/&nbsp${day[nowDay-1]}day`
+      document.querySelector('.oneDay').innerHTML = `${nowHours}:${nowMinutes}:${nowSecond} &nbsp ${nowMonth + 1}/${nowDate}/${nowYear}`
     }, 1000) // 设置定时器的时间间隔为1000毫秒
  
     // setInterval(function () { // 创建另一个定时器
